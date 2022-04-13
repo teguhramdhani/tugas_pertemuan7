@@ -28,9 +28,9 @@
 
         .main {
             border: 5px solid #fff;
-            height: 475px;
+            height: 430px;
             color: #fff;
-            padding: 5px 5px;
+            padding-top: 50px;
         }
 
         .main form {
@@ -58,6 +58,7 @@
             width: 350px;
             height: 25px;
             display: flex;
+            margin-bottom: 10px;
         }
 
         .main form .radio input {
@@ -70,6 +71,43 @@
             padding-right: 10px;
             margin-top: 5px;
             font-size: 18px;
+        }
+
+
+        select {
+            margin-top: 5px;
+            width: 200px;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Times New Roman';
+        }
+
+        option {
+            background-color: #c12;
+            color: #fff;
+        }
+
+        .main form .btn {
+            width: 360px;
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .main form .btn input {
+            margin: 10px 5px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #c12;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            font-family: 'Times New Roman';
+        }
+
+        .main form .btn input:hover {
+            background-color: #fff;
+            color: #c12;
+            border: 2px solid #c12;
         }
 
         .footer {
@@ -104,6 +142,22 @@
                 <input type="radio" name="jeniskelamin" id="jeniskelamin" value="laki-laki"> <span>Laki-laki</span>
                 <input type="radio" name="jeniskelamin" id="jeniskelamin" value="perempuan"><span>Perempuan</span>
             </div>
+
+            <label for="agama">Agama :</label>
+            <select name="agama" id="agama">
+                <option value="---">---</option>
+                <option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Budha">Budha</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Khonghucu">Khonghucu</option>
+            </select>
+            <div class="btn">
+                <input type="submit" name="simpan" value="SIMPAN">
+                <input type="reset" name="delete" value="DELETE">
+            </div>
+
         </form>
     </div>
 
