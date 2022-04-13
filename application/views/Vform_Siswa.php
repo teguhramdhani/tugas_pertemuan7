@@ -4,117 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Siswa</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            background-color: #c12;
-            text-align: center;
-        }
-
-        .header {
-            height: 55px;
-            padding-top: 15px;
-            background-color: #fff;
-        }
-
-        .header h1 span {
-            color: #c12;
-        }
-
-        .main {
-            border: 5px solid #fff;
-            height: 430px;
-            color: #fff;
-            padding-top: 50px;
-        }
-
-        .main form {
-            width: 360px;
-            display: inline-block;
-        }
-
-        .main form label {
-            display: block;
-            width: 150px;
-            height: 25px;
-            float: left;
-            font-size: 20px;
-            margin: 5px 0px;
-            text-align: right;
-        }
-
-        .main form input {
-            width: 200px;
-            height: 25px;
-            margin: 5px 0px;
-        }
-
-        .main form .radio {
-            width: 350px;
-            height: 25px;
-            display: flex;
-            margin-bottom: 10px;
-        }
-
-        .main form .radio input {
-            margin-top: 3px;
-            margin-left: 10px;
-        }
-
-        .main form .radio span {
-            width: 300px;
-            padding-right: 10px;
-            margin-top: 5px;
-            font-size: 18px;
-        }
-
-
-        select {
-            margin-top: 5px;
-            width: 200px;
-            font-size: 18px;
-            text-align: center;
-            font-family: 'Times New Roman';
-        }
-
-        option {
-            background-color: #c12;
-            color: #fff;
-        }
-
-        .main form .btn {
-            width: 360px;
-            display: flex;
-            margin-top: 10px;
-        }
-
-        .main form .btn input {
-            margin: 10px 5px;
-            height: 50px;
-            font-size: 20px;
-            background-color: #c12;
-            color: #fff;
-            border: 2px solid #fff;
-            border-radius: 10px;
-            font-family: 'Times New Roman';
-        }
-
-        .main form .btn input:hover {
-            background-color: #fff;
-            color: #c12;
-            border: 2px solid #c12;
-        }
-
-        .footer {
-            background-color: #fff;
-            height: 55px;
-        }
-    </style>
+    <title>Form Siswa</title>
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/style.css">
 </head>
 
 <body>
@@ -124,7 +15,7 @@
     </div>
 
     <div class="main">
-        <form action="" method="post">
+        <form action="<?= base_url('Siswa/simpan'); ?>" method="post">
             <label for="nama">Nama Siswa :</label>
             <input type="text" name="nama" id="nama" placeholder="Nama siswa.." required autocomplete="true">
             <label for="nis">NIS :</label>
