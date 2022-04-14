@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Siswa</title>
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/style.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/siswa.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <label for="kelas">Kelas :</label>
             <input type="text" name="kelas" id="kelas" placeholder="Kelas.." required autocomplete="true">
             <label for="tanggallahir">Tanggal lahir :</label>
-            <input type="text" name="tanggallahir" id="tanggallahir" placeholder="Tanggal lahir.." required autocomplete="true">
+            <input type="text" name="tanggallahir" id="tanggallahir" required autocomplete="true">
             <label for="tempatlahir">Tempat Lahir :</label>
             <input type="text" name="tempatlahir" id="tempatlahir" placeholder="Tempat lahir.." required autocomplete="true">
             <label for="alamat">Alamat :</label>
@@ -53,6 +53,8 @@
     </div>
 
     <div class="footer">
+        <p>By : Teguh Ramdhani</p>
+        <p>17190987</p>
 
     </div>
 </body>

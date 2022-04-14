@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Siswa</title>
-    <link rel="stylesheet" href="<?= base_url(); ?>assets/style.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/siswa.css">
 </head>
 
 <body>
@@ -15,48 +15,87 @@
     </div>
 
     <div class="main">
-        <table>
-            <tr class="thead">
-                <td>Nama</td>
-                <td>NIS</td>
-                <td>Kelas</td>
-                <td>Tanggal lahir</td>
-                <td>Tempat Lahir</td>
-                <td>Alamat</td>
-                <td>Jenis Kelamin</td>
-                <td>Agama</td>
+        <table cellpadding="1" cellspacing="3">
+            <tr>
+                <td>
+                    Nama
+                </td>
+                <td>
+                    :
+                </td>
+                <td><?= $nama; ?></td>
             </tr>
-            <tr class="tbody">
+            <tr>
                 <td>
-                    <?= $nama; ?>
+                    NIS
                 </td>
                 <td>
-                    <?= $nis; ?>
+                    :
+                </td>
+                <td><?= $nis; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Kelas
                 </td>
                 <td>
-                    <?= $kelas; ?>
+                    :
+                </td>
+                <td><?= $kelas; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Tanggal Lahir
                 </td>
                 <td>
-                    <?= $tanggallahir; ?>
+                    :
+                </td>
+                <td><?= $tanggallahir; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Tempat Lahir
                 </td>
                 <td>
-                    <?= $tempatlahir; ?>
+                    :
+                </td>
+                <td><?= $tempatlahir; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Alamat
                 </td>
                 <td>
-                    <?= $alamat; ?>
+                    :
+                </td>
+                <td><?= $alamat; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Jenis Kelamin
                 </td>
                 <td>
-                    <?= $jeniskelamin; ?>
+                    :
+                </td>
+                <td><?= $jeniskelamin; ?></td>
+            </tr>
+            <tr>
+                <td>
+                    Agama
                 </td>
                 <td>
-                    <?= $agama; ?>
+                    :
                 </td>
-
+                <td><?= $agama; ?></td>
             </tr>
         </table>
+        <div class="back">
+            <a href="<?= base_url('siswa'); ?>">Kembali</a>
+        </div>
     </div>
     <div class="footer">
-
+        <p>By : Teguh Ramdhani</p>
+        <p>17190987</p>
     </div>
 </body>
 
