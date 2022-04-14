@@ -15,6 +15,7 @@
     </div>
 
     <div class="main">
+        <?php echo validation_errors(); ?>
         <form action="<?= base_url('Siswa/simpan'); ?>" method="post">
             <label for="nama">Nama Siswa :</label>
             <input type="text" name="nama" id="nama" placeholder="Nama siswa.." required autocomplete="true">
