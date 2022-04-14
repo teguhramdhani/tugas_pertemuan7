@@ -103,7 +103,7 @@ option {
 .main table {
 	background-color: #eee;
 	padding: 10px 15px;
-	margin-left: 510px;
+	margin-left: 500px;
 	font-size: 20px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -135,4 +135,9 @@ option {
 }
 .footer p {
 	font-size: 20px;
+}
+@media (max-width: 768px) {
+	.main table {
+		margin-left: 25%;
+	}
 }
